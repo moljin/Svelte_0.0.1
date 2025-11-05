@@ -55,7 +55,7 @@ class ProductionConfig(BaseConfig):
 
 def get_config():
     env = APP_ENV.lower()
-    print("APP_ENV: ", env)
+    print("1. APP_ENV: ", env)
     """ 환경설정 .env 파일을 사용하여 os.environ.get)을 호출하려면,
      반드시 load_dotenv로 경로 설정이 되어 있어야 햔다. """
     if env == "production":
